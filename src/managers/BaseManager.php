@@ -52,11 +52,11 @@ abstract class BaseManager implements ActiveRecordHistoryInterface
         $pk = $pk[0];
         
         $explodeObject = explode(".",  $object->tableName());
-        if(isset($explodeObject[1])){
-            $tableName = $explodeObject[1];
-        }else{
-            $tableName = $explodeObject[0];
-        }
+        if(isset($explodeObject[1])){
+            $tableName = $explodeObject[1];
+        }else{
+            $tableName = $explodeObject[0];
+        }
         
         $data = [
             'table' => $tableName,
